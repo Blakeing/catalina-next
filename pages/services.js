@@ -1,8 +1,9 @@
-import React from "react";
+import { Head } from "../components/head";
 
 function ServicesPage() {
   return (
     <>
+      <Head title="Services" />
       <nav
         style={{ height: 264, marginBottom: 112 }}
         className="w-full bg-gray-500"
