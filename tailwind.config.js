@@ -6,7 +6,7 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      body: ["Spinnaker", "sans-serif"],
+      body: ["Spinnaker", "Jura", "sans-serif"],
     },
     extend: {
       colors: {
