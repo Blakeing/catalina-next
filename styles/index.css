@@ -6,18 +6,61 @@
 
 @layer base {
   p {
-    font-family: "Spinnaker"
+    font-family: 'Spinnaker';
   }
 
   h1 {
-    font-family: "Jura"
+    font-family: 'Jura';
   }
 
   h2 {
-    font-family: "Jura"
+    font-family: 'Jura';
   }
 
   h3 {
-    font-family: "Jura"
+    font-family: 'Jura';
+  }
+  .grid-layout {
+    background-color: purple;
+    display: grid;
+    height: 300px;
+    width: 100%;
+
+    /* 
+      full-start 0 to 1fr -> 100%
+      main-start 0 to 1020px  -> placed to 1020px of the browser
+    */
+    grid-template-columns:
+      [full-start] minmax(0, 1fr) [main-start] minmax(0, 1440px)
+      [main-end] minmax(0, 1fr) [full-end];
+  }
+
+  /* Main is default column for container */
+  .grid-layout > div {
+    grid-column: main;
+  }
+
+  /* Full is using for full width out of the container */
+  .grid-layout > div.full-width {
+    grid-column: full;
+  }
+
+  .grid-layout > div:nth-child(1) {
+    background-color: salmon;
+  }
+  .grid-layout > div:nth-child(2) {
+    background-color: sandybrown;
+  }
+  .grid-layout > div:nth-child(3) {
+    background-color: seagreen;
+  }
+  .grid-layout > div:nth-child(4) {
+    background-color: skyblue;
+  }
+  .grid-layout > div:nth-child(5) {
+    background-color: slateblue;
+  }
+  .grid-layout > div:nth-child(6) {
+    background-color: tomato;
   }
 }

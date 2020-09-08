@@ -1,30 +1,31 @@
-import { Head } from "../components/head";
+import { Head } from '../components/head';
 
 function ServicesPage() {
   return (
     <>
       <Head title="Services | Catalina" />
+
       <header
         style={{ height: 264 }}
-        className="flex mb-32 justify-center items-center w-full h-full bg-gray-900"
+        className="relative flex items-center justify-center w-full h-full mb-32 bg-gray-900"
       >
         <nav className="">
           <div className="absolute top-0 left-0 ">
             <div
-              style={{ fontFamily: "Spinnaker" }}
-              className="text-2xl text-white uppercase tracking-widest pt-10 pl-10"
+              style={{ fontFamily: 'Spinnaker' }}
+              className="pt-10 pl-10 text-2xl tracking-widest text-white uppercase"
             >
               Catalina
             </div>
           </div>
           <div className="absolute top-0 right-0">
-            <div className="pt-10 pr-10 flex justify-start items-center text-gray-500">
+            <div className="flex items-center justify-start pt-10 pr-10 text-gray-500">
               <a
-                className="block flex items-center hover:text-gray-700 mr-5"
+                className="flex items-center block mr-5 hover:text-gray-700"
                 href="https://github.com/tailwindlabs/tailwindcss"
               >
                 <svg
-                  className="fill-current w-5 h-5"
+                  className="w-5 h-5 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -33,11 +34,11 @@ function ServicesPage() {
                 </svg>
               </a>
               <a
-                className="block flex items-center hover:text-gray-700 mr-5"
+                className="flex items-center block mr-5 hover:text-gray-700"
                 href="https://twitter.com/tailwindcss"
               >
                 <svg
-                  className="fill-current w-5 h-5"
+                  className="w-5 h-5 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -46,11 +47,11 @@ function ServicesPage() {
                 </svg>
               </a>
               <a
-                className="block flex items-center hover:text-gray-700"
+                className="flex items-center block hover:text-gray-700"
                 href="/discord"
               >
                 <svg
-                  className="fill-current w-5 h-5"
+                  className="w-5 h-5 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 146 146"
                 >
@@ -69,12 +70,16 @@ function ServicesPage() {
         </h1>
       </header>
       <main className="container px-6 mx-auto">
-        <div className=" grid grid-rows-3 grid-flow-col grid-cols-12 gap-6 gap-y-32">
-          <div className="h-full w-full col-start-1 col-end-7">
+        <img
+          className="absolute top-0 right-0"
+          src="http://coobo.media/clients/ingenthron/catalina/images/top-right-dots.png"
+        />
+        <div className="grid grid-flow-col grid-cols-12 grid-rows-3 gap-6 gap-y-32">
+          <div className="w-full h-full col-start-1 col-end-7">
             <h2 className="text-2xl leading-6 ">
               Commercial Finance Solutions
             </h2>
-            <h3 className="mt-6 text-4xl leading-8 font-bold">
+            <h3 className="mt-6 text-4xl font-bold leading-8">
               Extensive Relationships.
             </h3>
             <p className="mt-6 leading-8">
@@ -87,21 +92,21 @@ function ServicesPage() {
               surrounding the financing demands for your business.
             </p>
           </div>
-          <div className="h-full w-full col-start-8 col-end-13 ">
+          <div className="w-full h-full col-start-8 col-end-13 ">
             <img
               className="float-right"
               src="https://via.placeholder.com/560x315"
             />
           </div>
-          <div className="h-full w-full col-start-1 col-end-6 ">
+          <div className="w-full h-full col-start-1 col-end-6 ">
             <img
               className="float-left"
               src="https://via.placeholder.com/560x315"
             />
           </div>
-          <div className="h-full w-full col-start-7 col-end-13 ">
+          <div className="w-full h-full col-start-7 col-end-13 ">
             <h2 className="text-2xl leading-6">Bank Loan Restructuring</h2>
-            <h3 className="mt-6 text-4xl leading-8 font-bold">
+            <h3 className="mt-6 text-4xl font-bold leading-8">
               Proven Strategies
             </h3>
             <p className="mt-6 leading-8">
@@ -117,9 +122,9 @@ function ServicesPage() {
               modification and restructuring.
             </p>
           </div>
-          <div className="h-full w-full col-start-1 col-end-7 ">
+          <div className="w-full h-full col-start-1 col-end-7 ">
             <h2 className="text-2xl leading-6 ">Lender Management</h2>
-            <h3 className="mt-6 text-4xl leading-8 font-bold">
+            <h3 className="mt-6 text-4xl font-bold leading-8">
               Deep Expertise.
             </h3>
             <p className="mt-6 leading-8">
@@ -134,7 +139,7 @@ function ServicesPage() {
               loan reporting requirements.
             </p>
           </div>
-          <div className="h-full w-full col-start-8 col-end-13 ">
+          <div className="w-full h-full col-start-8 col-end-13 ">
             <img
               className="float-right"
               src="https://via.placeholder.com/560x315"
