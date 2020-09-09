@@ -5,24 +5,40 @@
 @tailwind utilities;
 
 @layer base {
+  .primary-color {
+    color: #2D292A;
+  }
+
+  .nav-links li {
+    font-size: 19px;
+    padding-left: 2.0625em;
+    display: inline;
+    position: relative;
+    font-family: 'Spinnaker';
+    letter-spacing: .1em;
+  }
+
   p {
     font-family: 'Spinnaker';
+    font-size: 19px;
+    letter-spacing: .1em;
   }
 
   h1 {
     font-family: 'Jura';
+
   }
 
   h2 {
     font-family: 'Jura';
+    font-size: 44px;
+    font-weight: bold;
   }
 
   h3 {
     font-family: 'Jura';
-  }
+    font-size: 29px;
 
-  .grid-reverse {
-    direction: 'rtl';
   }
 
   .grid-layout {

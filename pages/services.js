@@ -7,7 +7,7 @@ function ServicesPage() {
 
       <header
         style={{ height: 264 }}
-        className="relative flex items-center justify-center w-full h-full mb-32 bg-gray-900"
+        className="relative flex items-center justify-center w-full h-full bg-gray-900"
       >
         <nav className="">
           <div className="absolute top-0 left-0 ">
@@ -21,7 +21,7 @@ function ServicesPage() {
           <div className="absolute top-0 right-0">
             <div className="flex items-center justify-start pt-10 pr-10 text-gray-500">
               <a
-                className="flex items-center block mr-5 hover:text-gray-700"
+                className="flex items-center mr-5 hover:text-gray-700"
                 href="https://github.com/tailwindlabs/tailwindcss"
               >
                 <svg
@@ -34,7 +34,7 @@ function ServicesPage() {
                 </svg>
               </a>
               <a
-                className="flex items-center block mr-5 hover:text-gray-700"
+                className="flex items-center mr-5 hover:text-gray-700"
                 href="https://twitter.com/tailwindcss"
               >
                 <svg
