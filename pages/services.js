@@ -1,4 +1,4 @@
-import { Head } from '../components/head';
+import { Head } from "../components/head";
 
 function ServicesPage() {
   return (
@@ -12,7 +12,7 @@ function ServicesPage() {
         <nav className="">
           <div className="absolute top-0 left-0 ">
             <div
-              style={{ fontFamily: 'Spinnaker' }}
+              style={{ fontFamily: "Spinnaker" }}
               className="pt-10 pl-10 text-2xl tracking-widest text-white uppercase"
             >
               Catalina

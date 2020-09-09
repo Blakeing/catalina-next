@@ -20,10 +20,14 @@
   h3 {
     font-family: 'Jura';
   }
+
+  .grid-reverse {
+    direction: 'rtl';
+  }
+
   .grid-layout {
-    background-color: purple;
     display: grid;
-    height: 300px;
+    height: 100%;
     width: 100%;
 
     /* 
@@ -31,36 +35,21 @@
       main-start 0 to 1020px  -> placed to 1020px of the browser
     */
     grid-template-columns:
-      [full-start] minmax(0, 1fr) [main-start] minmax(0, 1440px)
-      [main-end] minmax(0, 1fr) [full-end];
+      [full-start] minmax(0, 1fr) [main-start] minmax(0, 1440px) [main-end] minmax(0, 1fr) [full-end];
   }
 
   /* Main is default column for container */
-  .grid-layout > div {
+  .grid-layout>div {
     grid-column: main;
   }
 
   /* Full is using for full width out of the container */
-  .grid-layout > div.full-width {
+  .grid-layout>div.full-width {
     grid-column: full;
   }
 
-  .grid-layout > div:nth-child(1) {
-    background-color: salmon;
-  }
-  .grid-layout > div:nth-child(2) {
-    background-color: sandybrown;
-  }
-  .grid-layout > div:nth-child(3) {
-    background-color: seagreen;
-  }
-  .grid-layout > div:nth-child(4) {
-    background-color: skyblue;
-  }
-  .grid-layout > div:nth-child(5) {
-    background-color: slateblue;
-  }
-  .grid-layout > div:nth-child(6) {
-    background-color: tomato;
+  .grid-layout>div:nth-child(2) {
+    background-color: #1a202c;
+    color: white;
   }
 }
