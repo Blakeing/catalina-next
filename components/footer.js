@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: "#1a202c" }} className="">
       <div className="flex items-center justify-between h-20 px-8 mx-auto max-w-screen-xxl">
-        <div className="text-white ">
+        <div className="text-white">
           <p>Designed by Elegant Themes | Powered by Wordpress</p>
         </div>
         <div className="flex justify-center">

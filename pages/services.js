@@ -47,7 +47,7 @@ function ServicesPage() {
                 </svg>
               </a>
               <a
-                className="flex items-center block hover:text-gray-700"
+                className="flex items-center hover:text-gray-700"
                 href="/discord"
               >
                 <svg
@@ -124,9 +124,7 @@ function ServicesPage() {
           </div>
           <div className="w-full h-full col-start-1 col-end-7 ">
             <h2 className="text-2xl leading-6 ">Lender Management</h2>
-            <h3 className="mt-6 text-4xl font-bold leading-8">
-              Deep Expertise.
-            </h3>
+            <h3 className="mt-6 font-bold leading-8">Deep Expertise.</h3>
             <p className="mt-6 leading-8">
               Management teams get pulled in many different directions. It can
               be difficult to prioritize your bank reporting over other

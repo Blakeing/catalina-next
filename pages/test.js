@@ -7,18 +7,34 @@ const Test = () => {
     <>
       <Head title="Services | Catalina" />
       <Header />
-      {/* <img
-        style={{ top: 264 }}
+      {/* <div
+        style={{
+          top: 264,
+          backgroundSize: "cover",
+          backgroundImage:
+            "url(" +
+            "http://coobo.media/clients/ingenthron/catalina/images/top-left-dots-2.png" +
+            ")",
+        }}
         className="absolute left-0"
-        src="http://coobo.media/clients/ingenthron/catalina/images/top-left-dots-2.png"
-      />
+      ></div>
+
       <img
         style={{ top: 264 }}
         className="absolute right-0"
         src="http://coobo.media/clients/ingenthron/catalina/images/top-right-dots-2.png"
       /> */}
-      <div className="grid-layout">
-        <div className="container px-4 py-16 mx-auto md:py-32 sm:px-8">
+      <div className="relative overflow-hidden page-content grid-layout">
+        <div
+          style={{ backgroundPositionY: "0%" }}
+          className="fixed top-0 w-full h-64 text-center bg-cover people"
+        >
+          <div className="relative top-0 pt-32 pb-64 header-content">
+            <span className="text-center">Seed/Early</span>
+          </div>
+        </div>
+
+        <div className="container relative px-4 py-16 mx-auto mt-32 overflow-hidden people-holder md:py-32 sm:px-8">
           <div className="grid grid-flow-row gap-4 sm:gap-6 xl:grid-flow-col xl:grid-cols-12">
             <div className="w-full h-full col-span-12 xl:col-start-1 xl:col-end-7">
               <h3 className="col-start-8 leading-6 primary-color ">

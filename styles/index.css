@@ -6,7 +6,7 @@
 
 @layer base {
   .primary-color {
-    color: #2D292A;
+    color: #2d292a;
   }
 
   .nav-links li {
@@ -14,31 +14,32 @@
     padding-left: 2.0625em;
     display: inline;
     position: relative;
-    font-family: 'Spinnaker';
-    letter-spacing: .1em;
+    font-family: "Spinnaker";
+    letter-spacing: 0.1em;
   }
 
   p {
-    font-family: 'Spinnaker';
+    font-family: "Spinnaker";
     font-size: 19px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
   }
 
   h1 {
-    font-family: 'Jura';
-
+    font-family: "Jura";
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
   }
 
   h2 {
-    font-family: 'Jura';
+    font-family: "Jura";
     font-size: 44px;
     font-weight: bold;
   }
 
   h3 {
-    font-family: 'Jura';
+    font-family: "Jura";
     font-size: 29px;
-
   }
 
   .grid-layout {
@@ -51,20 +52,21 @@
       main-start 0 to 1020px  -> placed to 1020px of the browser
     */
     grid-template-columns:
-      [full-start] minmax(0, 1fr) [main-start] minmax(0, 1440px) [main-end] minmax(0, 1fr) [full-end];
+      [full-start] minmax(0, 1fr) [main-start] minmax(0, 1440px)
+      [main-end] minmax(0, 1fr) [full-end];
   }
 
   /* Main is default column for container */
-  .grid-layout>div {
+  .grid-layout > div {
     grid-column: main;
   }
 
   /* Full is using for full width out of the container */
-  .grid-layout>div.full-width {
+  .grid-layout > div.full-width {
     grid-column: full;
   }
 
-  .grid-layout>div:nth-child(2) {
+  .grid-layout > div:nth-child(2) {
     background-color: #1a202c;
     color: white;
   }

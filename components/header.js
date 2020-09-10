@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NavLink } from "../components/NavLink";
 
 const Header = () => {
   return (
@@ -17,10 +18,8 @@ const Header = () => {
       >
         <div className="pt-8 pr-8 text-white">
           <ul className="relative z-50 float-right pt-1 tracking-widest nav-links">
-            <li className="">
-              <Link href="/about">
-                <a>About</a>
-              </Link>
+            <li>
+              <NavLink href="/about" linkName="About" />
             </li>
             <li className="">
               <Link href="/services">
