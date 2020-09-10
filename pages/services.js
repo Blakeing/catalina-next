@@ -11,7 +11,7 @@ function ServicesPage() {
       <div className="fixed top-0 z-30 pt-8 pl-8 main-logo -home js-main-logo -show">
         <a
           style={{ fontFamily: "Spinnaker", letterSpacing: ".2em" }}
-          className="text-2xl leading-8 tracking-widest text-black uppercase "
+          className="text-2xl leading-8 tracking-widest text-white uppercase "
           href="/"
         >
           CATALINA
@@ -19,7 +19,7 @@ function ServicesPage() {
       </div>
 
       <div className="fixed top-0 z-20 w-full h-32 bg-cover nav js-nav-container _container -show">
-        <div className="pt-8 pr-8 text-black nav _right js-nav-right">
+        <div className="pt-8 pr-8 text-white nav _right js-nav-right">
           <ul className="relative z-50 float-right pt-1 tracking-widest nav-links">
             <li>
               <NavLink href="/about" linkName="About" />
@@ -49,15 +49,12 @@ function ServicesPage() {
               display: "inherit",
               paddingTop: 160,
               paddingBottom: 128,
-              backgroundImage:
-                "url(" +
-                "https://d33wubrfki0l68.cloudfront.net/img/97a76c037453e9facc0b0dd856c6755264a2a1bb/grid-bg-1.jpg" +
-                ")",
+              backgroundColor: "#1a202c",
             }}
             className="fixed top-0 w-full text-center bg-cover _header-content js-people-header-content hs-header-content"
           >
             <div className="container relative top-0 grid grid-cols-12 mx-auto _header-content js-people-header-content hs-header-content">
-              <h1 className="col-span-4 leading-10 xxl:col-start-4 xxl:col-end-8 primary-color">
+              <h1 className="col-span-4 leading-10 text-white  xxl:col-start-4 xxl:col-end-8 primary-color">
                 Our Services
               </h1>
             </div>
